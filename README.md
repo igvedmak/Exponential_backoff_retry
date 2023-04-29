@@ -5,6 +5,7 @@ Example usage:
 
 ```using namespace expbr;
 
+#include "exp_backoff_retry.h"
 #include <iostream>
 
 // Define the function to be called
