@@ -1,6 +1,7 @@
 # Exponential_backoff_retry
 Implementation of async exponential backoff retry in c++ 17
-Example usage.
+
+Example usage:
 
 ```using namespace expbr;
 
