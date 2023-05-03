@@ -17,7 +17,7 @@ bool myFunction(int arg1, double arg2) {
 int main()
 {
     // Create an instance of the Exponential_backoff_retry class
-    Exponential_backoff_retry retry(5, milliseconds(100), 1.5);
+    Utils::Exponential_backoff_retry retry(5, milliseconds(100), 1.5);
 
     // Call the function using the retry object
     auto futureResult = retry(true, myFunction, 42, 3.14);
