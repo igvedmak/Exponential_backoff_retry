@@ -8,7 +8,7 @@
 
 using namespace std::chrono;
 
-namespace expbr {
+namespace Utils {
     class Exponential_backoff_retry {
     public:
 
@@ -108,4 +108,4 @@ namespace expbr {
             return milliseconds(static_cast<long long>(this->_baseDelay.count() * std::pow(this->_backoffFactor, retryCount)));
         }
     };
-}
+} // namespace Utils
