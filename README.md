@@ -1,5 +1,11 @@
 # Exponential_backoff_retry
-Implementation of async exponential backoff retry in c++ 17
+Implementation of async exponential backoff retry in c++17.
+
+Compilation flags:
+
+```
+ -pthread
+```
 
 Example usage:
 
@@ -26,4 +32,15 @@ int main()
     bool result = futureResult.get();
     std::cout << result << std::endl;
 }
+```
+
+Output:
+
+```
+working...
+working...
+working...
+working...
+working...
+0
 ```
